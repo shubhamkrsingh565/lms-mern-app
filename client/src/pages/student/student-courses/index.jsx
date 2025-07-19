@@ -18,7 +18,7 @@ const StudentCoursesPage = () => {
     if (response?.success) {
       setStudentBoughtCoursesList(response?.data);
     }
-    console.log(response);
+    // console.log(response);
   }
 
   useEffect(() => {

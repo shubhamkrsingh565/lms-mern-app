@@ -43,20 +43,6 @@ const StudentViewCourseDetailsPage = () => {
   const location = useLocation();
 
   async function fetchStudentViewCourseDetails() {
-    // const checkCoursePurchaseInfoResponse =
-    //   await checkCoursePurchaseInfoService(
-    //     currentCourseDetailsId,
-    //     auth?.user._id
-    //   );
-
-    // if (
-    //   checkCoursePurchaseInfoResponse?.success &&
-    //   checkCoursePurchaseInfoResponse?.data
-    // ) {
-    //   navigate(`/course-progress/${currentCourseDetailsId}`);
-    //   return;
-    // }
-
     const response = await fetchStudentViewCourseDetailsService(
       currentCourseDetailsId
     );
@@ -71,7 +57,7 @@ const StudentViewCourseDetailsPage = () => {
   }
 
   function handleSetFreePreview(getCurrentVideoInfo) {
-    console.log(getCurrentVideoInfo);
+    // console.log(getCurrentVideoInfo);
     setDisplayCurrentVideoFreePreview(getCurrentVideoInfo?.videoUrl);
   }
 
@@ -94,7 +80,7 @@ const StudentViewCourseDetailsPage = () => {
       coursePricing: studentViewCourseDetails?.pricing,
     };
 
-    console.log(paymentPayload, "paymentPayload");
+    // console.log(paymentPayload, "paymentPayload");
     const response = await createPaymentService(paymentPayload);
 
     if (response.success) {
@@ -136,7 +122,8 @@ const StudentViewCourseDetailsPage = () => {
           (item) => item.freePreview
         )
       : -1;
-  console.log(studentViewCourseDetails);
+
+  // console.log(studentViewCourseDetails);
   return (
     <div className=" mx-auto p-4">
       <div className="bg-gray-900 text-white p-8 rounded-t-lg">

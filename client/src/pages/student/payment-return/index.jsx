@@ -30,7 +30,7 @@ const PaypalPaymentReturnPage = () => {
     }
   }, [payerId, paymentId]);
 
-  console.log(params);
+  // console.log(params);
 
   return (
     <Card>

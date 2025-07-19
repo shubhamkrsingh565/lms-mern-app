@@ -41,7 +41,7 @@ const InstructorDashboard = ({ listOfCourses }) => {
     };
   }
 
-  console.log(calculateTotalStudentsAndProfit());
+  // console.log(calculateTotalStudentsAndProfit());
 
   const config = [
     {

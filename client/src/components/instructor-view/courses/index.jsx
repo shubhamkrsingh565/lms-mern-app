@@ -26,7 +26,7 @@ const InstructorCourses = ({ listOfCourses }) => {
 
   const navigate = useNavigate();
 
-  console.log(listOfCourses.length);
+  // console.log(listOfCourses.length);
 
   return (
     <Card>
